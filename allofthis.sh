@@ -32,7 +32,7 @@ yum repolist
 yum install dhcp -y
 cp -vf "/usr/share/doc/dhcp-4.1.1/dhcpd.conf.sample" /etc/dhcp/dhcpd.conf
 sed -i '47s/.*/subnet 10.200.200.0 netmask 255.255.255.240 {/' /etc/dhcp/dhcpd.conf
-sed -i '48s/.*/range 10.200.200.10 10.200.200.30; /' /etc/dhcp/dhcpd.conf
+sed -i '48s/.*/range 10.200.200.1 10.200.200.14; /' /etc/dhcp/dhcpd.conf
 sed -i '49s/.*/option domain-name-servers 10.200.200.2; /' /etc/dhcp/dhcpd.conf
 sed -i '50s/.*/option domain-name "asome.health"; /' /etc/dhcp/dhcpd.conf
 sed -i '51s/.*/option routers 10.200.200.1 ; /' /etc/dhcp/dhcpd.conf
